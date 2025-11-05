@@ -74,14 +74,17 @@ class Main{
                     System.out.println("Enter valid Choice to purchase");
                     continue;
             }
+          
+            System.out.println("Enter the Number of Quantity to be needed:");
+            Quantity = input.nextInt();
 
+            
             ShoppingCart cart = new ShoppingCart(Product, Price, Quantity);
             System.out.println("Kudos!!!,You have Succesfully purchased:" + Product);
             cart.Total();
 
         }
-        System.out.println("Enter the Number of Quantity to be needed:");
-        Quantity = input.nextInt();
+     
 
         input.close();
     }
